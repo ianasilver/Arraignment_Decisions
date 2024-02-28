@@ -1,0 +1,316 @@
+lavaan 0.6.15 ended normally after 50 iterations
+
+  Estimator                                       DWLS
+  Optimization method                           NLMINB
+  Number of model parameters                        26
+
+  Number of observations                          3791
+
+Model Test User Model:
+                                                      
+  Test statistic                              1426.164
+  Degrees of freedom                                25
+  P-value (Chi-square)                           0.000
+
+Model Test Baseline Model:
+
+  Test statistic                             18629.375
+  Degrees of freedom                                10
+  P-value                                        0.000
+
+User Model versus Baseline Model:
+
+  Comparative Fit Index (CFI)                    0.925
+  Tucker-Lewis Index (TLI)                       0.970
+
+Root Mean Square Error of Approximation:
+
+  RMSEA                                          0.122
+  90 Percent confidence interval - lower         0.116
+  90 Percent confidence interval - upper         0.127
+  P-value H_0: RMSEA <= 0.050                    0.000
+  P-value H_0: RMSEA >= 0.080                    1.000
+
+Standardized Root Mean Square Residual:
+
+  SRMR                                           0.027
+
+Parameter Estimates:
+
+  Standard errors                             Standard
+  Information                                 Expected
+  Information saturated (h1) model        Unstructured
+
+Latent Variables:
+                   Estimate  Std.Err  z-value  P(>|z|) ci.lower ci.upper   Std.lv  Std.all
+  Crim =~                                                                                 
+    Prior_FC          1.000                               1.000    1.000    0.888    0.888
+    Prior_VC          0.929    0.056   16.577    0.000    0.819    1.039    0.825    0.518
+    Prior_IN          0.899    0.053   16.900    0.000    0.794    1.003    0.798    0.798
+
+Regressions:
+                   Estimate  Std.Err  z-value  P(>|z|) ci.lower ci.upper   Std.lv  Std.all
+  detained ~                                                                              
+    Black     (a2)   -0.133    0.061   -2.191    0.028   -0.251   -0.014   -0.133   -0.050
+    AGE_CA    (c2)    0.005    0.002    2.583    0.010    0.001    0.010    0.005    0.059
+    CC_Felony        -0.390    0.051   -7.639    0.000   -0.490   -0.290   -0.390   -0.184
+    CC_Drug           0.034    0.099    0.347    0.729   -0.160    0.229    0.034    0.011
+    CC_Prprty        -0.039    0.079   -0.491    0.623   -0.194    0.116   -0.039   -0.018
+    CC_Violnt        -0.158    0.079   -2.000    0.046   -0.313   -0.003   -0.158   -0.074
+    Prior_FTA         0.399    0.056    7.065    0.000    0.288    0.509    0.399    0.156
+    Crim      (a3)    0.199    0.030    6.533    0.000    0.139    0.259    0.177    0.170
+  bail ~                                                                                  
+    Black     (a4)    0.125    0.054    2.334    0.020    0.020    0.231    0.125    0.047
+    AGE_CA    (c3)   -0.006    0.002   -3.135    0.002   -0.010   -0.002   -0.006   -0.064
+    CC_Felony        -0.351    0.045   -7.894    0.000   -0.439   -0.264   -0.351   -0.166
+    CC_Drug          -0.574    0.093   -6.165    0.000   -0.757   -0.392   -0.574   -0.183
+    CC_Prprty        -0.328    0.076   -4.334    0.000   -0.476   -0.179   -0.328   -0.153
+    CC_Violnt        -0.281    0.074   -3.795    0.000   -0.426   -0.136   -0.281   -0.132
+    Prior_FTA        -0.036    0.052   -0.696    0.486   -0.137    0.065   -0.036   -0.014
+    Crim      (a5)   -0.008    0.027   -0.304    0.761   -0.062    0.046   -0.007   -0.007
+
+Covariances:
+                   Estimate  Std.Err  z-value  P(>|z|) ci.lower ci.upper   Std.lv  Std.all
+ .detained ~~                                                                             
+   .bail             -0.988    0.009 -112.273    0.000   -1.005   -0.971   -0.988   -1.004
+
+Intercepts:
+                   Estimate  Std.Err  z-value  P(>|z|) ci.lower ci.upper   Std.lv  Std.all
+   .Prior_FC          0.000                               0.000    0.000    0.000    0.000
+   .Prior_VC         -0.801    0.181   -4.433    0.000   -1.156   -0.447   -0.801   -0.503
+   .Prior_IN          0.000                               0.000    0.000    0.000    0.000
+   .detained          0.000                               0.000    0.000    0.000    0.000
+   .bail              0.000                               0.000    0.000    0.000    0.000
+    Crim              0.000                               0.000    0.000    0.000    0.000
+
+Thresholds:
+                   Estimate  Std.Err  z-value  P(>|z|) ci.lower ci.upper   Std.lv  Std.all
+    Prior_FC|t1       3.079    0.146   21.057    0.000    2.792    3.366    3.079    3.079
+    Prior_IN|t1       3.807    0.191   19.975    0.000    3.433    4.180    3.807    3.807
+    detained|t1       0.795    0.113    7.054    0.000    0.574    1.016    0.795    0.766
+    bail|t1          -0.533    0.103   -5.165    0.000   -0.735   -0.331   -0.533   -0.514
+
+Variances:
+                   Estimate  Std.Err  z-value  P(>|z|) ci.lower ci.upper   Std.lv  Std.all
+   .Prior_FC          0.211                               0.211    0.211    0.211    0.211
+   .Prior_VC          1.858    0.049   37.958    0.000    1.763    1.954    1.858    0.732
+   .Prior_IN          0.363                               0.363    0.363    0.363    0.363
+   .detained          0.969                               0.969    0.969    0.969    0.899
+   .bail              1.000                               1.000    1.000    1.000    0.931
+    Crim              0.789    0.055   14.315    0.000    0.681    0.897    1.000    1.000
+
+Scales y*:
+                   Estimate  Std.Err  z-value  P(>|z|) ci.lower ci.upper   Std.lv  Std.all
+    Prior_FC          1.000                               1.000    1.000    1.000    1.000
+    Prior_IN          1.000                               1.000    1.000    1.000    1.000
+    detained          1.000                               1.000    1.000    1.000    1.000
+    bail              1.000                               1.000    1.000    1.000    1.000
+
+R-Square:
+                   Estimate
+    Prior_FC          0.789
+    Prior_VC          0.268
+    Prior_IN          0.637
+    detained          0.101
+    bail              0.069
+
+   id         lhs  op         rhs user block group free ustart exo label plabel   start     est    se
+1   1        Crim  =~    Prior_FC    1     1     1    0      1   0         .p1.   1.000   1.000 0.000
+2   2        Crim  =~    Prior_VC    1     1     1    1     NA   0         .p2.   0.913   0.929 0.056
+3   3        Crim  =~    Prior_IN    1     1     1    2     NA   0         .p3.   0.886   0.899 0.053
+4   4    detained   ~       Black    1     1     1    3     NA   1    a2   .p4.   0.000  -0.133 0.061
+5   5    detained   ~      AGE_CA    1     1     1    4     NA   1    c2   .p5.   0.000   0.005 0.002
+6   6    detained   ~   CC_Felony    1     1     1    5     NA   1         .p6.   0.000  -0.390 0.051
+7   7    detained   ~     CC_Drug    1     1     1    6     NA   1         .p7.   0.000   0.034 0.099
+8   8    detained   ~ CC_Property    1     1     1    7     NA   1         .p8.   0.000  -0.039 0.079
+9   9    detained   ~  CC_Violent    1     1     1    8     NA   1         .p9.   0.000  -0.158 0.079
+10 10    detained   ~   Prior_FTA    1     1     1    9     NA   1        .p10.   0.000   0.399 0.056
+11 11    detained   ~        Crim    1     1     1   10     NA   0    a3  .p11.   0.000   0.199 0.030
+12 12        bail   ~       Black    1     1     1   11     NA   1    a4  .p12.   0.000   0.125 0.054
+13 13        bail   ~      AGE_CA    1     1     1   12     NA   1    c3  .p13.   0.000  -0.006 0.002
+14 14        bail   ~   CC_Felony    1     1     1   13     NA   1        .p14.   0.000  -0.351 0.045
+15 15        bail   ~     CC_Drug    1     1     1   14     NA   1        .p15.   0.000  -0.574 0.093
+16 16        bail   ~ CC_Property    1     1     1   15     NA   1        .p16.   0.000  -0.328 0.076
+17 17        bail   ~  CC_Violent    1     1     1   16     NA   1        .p17.   0.000  -0.281 0.074
+18 18        bail   ~   Prior_FTA    1     1     1   17     NA   1        .p18.   0.000  -0.036 0.052
+19 19        bail   ~        Crim    1     1     1   18     NA   0    a5  .p19.   0.000  -0.008 0.027
+20 20    Prior_FC   |          t1    0     1     1   19     NA   0        .p20.   3.079   3.079 0.146
+21 21    Prior_IN   |          t1    0     1     1   20     NA   0        .p21.   3.807   3.807 0.191
+22 22    detained   |          t1    0     1     1   21     NA   0        .p22.   0.795   0.795 0.113
+23 23        bail   |          t1    0     1     1   22     NA   0        .p23.  -0.533  -0.533 0.103
+24 24    Prior_FC  ~~    Prior_FC    0     1     1    0      1   0        .p24.   1.000   0.211 0.000
+25 25    Prior_VC  ~~    Prior_VC    0     1     1   23     NA   0        .p25.   1.270   1.858 0.049
+26 26    Prior_IN  ~~    Prior_IN    0     1     1    0      1   0        .p26.   1.000   0.363 0.000
+27 27    detained  ~~    detained    0     1     1    0      1   0        .p27.   1.000   0.969 0.000
+28 28        bail  ~~        bail    0     1     1    0      1   0        .p28.   1.000   1.000 0.000
+29 29        Crim  ~~        Crim    0     1     1   24     NA   0        .p29.   0.050   0.789 0.055
+30 30    detained  ~~        bail    0     1     1   25     NA   0        .p30.   0.000  -0.988 0.009
+31 31       Black  ~~       Black    0     1     1    0     NA   1        .p31.   0.151   0.151 0.000
+32 32       Black  ~~      AGE_CA    0     1     1    0     NA   1        .p32.  -0.322  -0.322 0.000
+33 33       Black  ~~   CC_Felony    0     1     1    0     NA   1        .p33.  -0.004  -0.004 0.000
+34 34       Black  ~~     CC_Drug    0     1     1    0     NA   1        .p34.  -0.012  -0.012 0.000
+35 35       Black  ~~ CC_Property    0     1     1    0     NA   1        .p35.  -0.002  -0.002 0.000
+36 36       Black  ~~  CC_Violent    0     1     1    0     NA   1        .p36.   0.014   0.014 0.000
+37 37       Black  ~~   Prior_FTA    0     1     1    0     NA   1        .p37.   0.007   0.007 0.000
+38 38      AGE_CA  ~~      AGE_CA    0     1     1    0     NA   1        .p38. 127.301 127.301 0.000
+39 39      AGE_CA  ~~   CC_Felony    0     1     1    0     NA   1        .p39.  -0.230  -0.230 0.000
+40 40      AGE_CA  ~~     CC_Drug    0     1     1    0     NA   1        .p40.   0.207   0.207 0.000
+41 41      AGE_CA  ~~ CC_Property    0     1     1    0     NA   1        .p41.  -0.013  -0.013 0.000
+42 42      AGE_CA  ~~  CC_Violent    0     1     1    0     NA   1        .p42.  -0.265  -0.265 0.000
+43 43      AGE_CA  ~~   Prior_FTA    0     1     1    0     NA   1        .p43.   0.822   0.822 0.000
+44 44   CC_Felony  ~~   CC_Felony    0     1     1    0     NA   1        .p44.   0.241   0.241 0.000
+45 45   CC_Felony  ~~     CC_Drug    0     1     1    0     NA   1        .p45.   0.044   0.044 0.000
+46 46   CC_Felony  ~~ CC_Property    0     1     1    0     NA   1        .p46.   0.022   0.022 0.000
+47 47   CC_Felony  ~~  CC_Violent    0     1     1    0     NA   1        .p47.  -0.034  -0.034 0.000
+48 48   CC_Felony  ~~   Prior_FTA    0     1     1    0     NA   1        .p48.  -0.001  -0.001 0.000
+49 49     CC_Drug  ~~     CC_Drug    0     1     1    0     NA   1        .p49.   0.109   0.109 0.000
+50 50     CC_Drug  ~~ CC_Property    0     1     1    0     NA   1        .p50.  -0.047  -0.047 0.000
+51 51     CC_Drug  ~~  CC_Violent    0     1     1    0     NA   1        .p51.  -0.049  -0.049 0.000
+52 52     CC_Drug  ~~   Prior_FTA    0     1     1    0     NA   1        .p52.   0.015   0.015 0.000
+53 53 CC_Property  ~~ CC_Property    0     1     1    0     NA   1        .p53.   0.235   0.235 0.000
+54 54 CC_Property  ~~  CC_Violent    0     1     1    0     NA   1        .p54.  -0.148  -0.148 0.000
+55 55 CC_Property  ~~   Prior_FTA    0     1     1    0     NA   1        .p55.   0.001   0.001 0.000
+56 56  CC_Violent  ~~  CC_Violent    0     1     1    0     NA   1        .p56.   0.238   0.238 0.000
+57 57  CC_Violent  ~~   Prior_FTA    0     1     1    0     NA   1        .p57.  -0.020  -0.020 0.000
+58 58   Prior_FTA  ~~   Prior_FTA    0     1     1    0     NA   1        .p58.   0.165   0.165 0.000
+59 59    Prior_FC ~*~    Prior_FC    0     1     1    0      1   0        .p59.   1.000   1.000 0.000
+60 60    Prior_IN ~*~    Prior_IN    0     1     1    0      1   0        .p60.   1.000   1.000 0.000
+61 61    detained ~*~    detained    0     1     1    0      1   0        .p61.   1.000   1.000 0.000
+62 62        bail ~*~        bail    0     1     1    0      1   0        .p62.   1.000   1.000 0.000
+63 63    Prior_FC  ~1                0     1     1    0      0   0        .p63.   0.000   0.000 0.000
+64 64    Prior_VC  ~1                0     1     1   26     NA   0        .p64.  -0.801  -0.801 0.181
+65 65    Prior_IN  ~1                0     1     1    0      0   0        .p65.   0.000   0.000 0.000
+66 66    detained  ~1                0     1     1    0      0   0        .p66.   0.000   0.000 0.000
+67 67        bail  ~1                0     1     1    0      0   0        .p67.   0.000   0.000 0.000
+68 68       Black  ~1                0     1     1    0     NA   1        .p68.   0.815   0.815 0.000
+69 69      AGE_CA  ~1                0     1     1    0     NA   1        .p69.  33.200  33.200 0.000
+70 70   CC_Felony  ~1                0     1     1    0     NA   1        .p70.   0.403   0.403 0.000
+71 71     CC_Drug  ~1                0     1     1    0     NA   1        .p71.   0.125   0.125 0.000
+72 72 CC_Property  ~1                0     1     1    0     NA   1        .p72.   0.377   0.377 0.000
+73 73  CC_Violent  ~1                0     1     1    0     NA   1        .p73.   0.392   0.392 0.000
+74 74   Prior_FTA  ~1                0     1     1    0     NA   1        .p74.   0.209   0.209 0.000
+75 75        Crim  ~1                0     1     1    0      0   0        .p75.   0.000   0.000 0.000
+$lambda
+         Crim detand bail
+Prior_FC    0      0    0
+Prior_VC    1      0    0
+Prior_IN    2      0    0
+detained    0      0    0
+bail        0      0    0
+
+$theta
+         Prr_FC Prr_VC Prr_IN detand bail
+Prior_FC      0                          
+Prior_VC      0     23                   
+Prior_IN      0      0      0            
+detained      0      0      0      0     
+bail          0      0      0      0    0
+
+$psi
+         Crim detand bail
+Crim       24            
+detained    0      0     
+bail        0     25    0
+
+$beta
+         Crim detand bail
+Crim        0      0    0
+detained   10      0    0
+bail       18      0    0
+
+$nu
+         intrcp
+Prior_FC      0
+Prior_VC     26
+Prior_IN      0
+detained      0
+bail          0
+
+$alpha
+         intrcp
+Crim          0
+detained      0
+bail          0
+
+$tau
+            thrshl
+Prior_FC|t1     19
+Prior_IN|t1     20
+detained|t1     21
+bail|t1         22
+
+$delta
+         scales
+Prior_FC      0
+Prior_VC      0
+Prior_IN      0
+detained      0
+bail          0
+
+$gamma
+         Black AGE_CA CC_Fln CC_Drg CC_Prp CC_Vln Pr_FTA
+Crim         0      0      0      0      0      0      0
+detained     3      4      5      6      7      8      9
+bail        11     12     13     14     15     16     17
+
+$cov.x
+            Black AGE_CA CC_Fln CC_Drg CC_Prp CC_Vln Pr_FTA
+Black           0                                          
+AGE_CA          0      0                                   
+CC_Felony       0      0      0                            
+CC_Drug         0      0      0      0                     
+CC_Property     0      0      0      0      0              
+CC_Violent      0      0      0      0      0      0       
+Prior_FTA       0      0      0      0      0      0      0
+
+$mean.x
+            intrcp
+Black            0
+AGE_CA           0
+CC_Felony        0
+CC_Drug          0
+CC_Property      0
+CC_Violent       0
+Prior_FTA        0
+
+$type
+[1] "cor.bollen"
+
+$res.cov
+         Prr_FC Prr_VC Prr_IN detand   bail
+Prior_FC  0.000                            
+Prior_VC  0.001  0.000                     
+Prior_IN  0.004 -0.005  0.000              
+detained -0.050  0.016  0.018  0.000       
+bail      0.083 -0.014 -0.078  0.000  0.000
+
+$res.int
+Prior_FC Prior_VC Prior_IN detained     bail 
+       0        0        0        0        0 
+
+$res.th
+Prior_FC|t1 Prior_IN|t1 detained|t1     bail|t1 
+          0           0           0           0 
+
+$res.slopes
+         Black AGE_CA CC_Fln CC_Drg CC_Prp CC_Vln Pr_FTA
+Prior_FC 0.188  0.032  0.021  0.619  0.347  0.200  1.184
+Prior_VC 0.249  0.017 -0.124  0.296  0.252  0.321  1.103
+Prior_IN 0.419  0.045 -0.040  0.222  0.115 -0.025  1.217
+detained 0.000  0.000  0.000  0.000  0.000  0.000  0.000
+bail     0.000  0.000  0.000  0.000  0.000  0.000  0.000
+
+$cov.x
+            Black AGE_CA CC_Fln CC_Drg CC_Prp CC_Vln Pr_FTA
+Black           0                                          
+AGE_CA          0      0                                   
+CC_Felony       0      0      0                            
+CC_Drug         0      0      0      0                     
+CC_Property     0      0      0      0      0              
+CC_Violent      0      0      0      0      0      0       
+Prior_FTA       0      0      0      0      0      0      0
+
+$mean.x
+      Black      AGE_CA   CC_Felony     CC_Drug CC_Property  CC_Violent   Prior_FTA 
+          0           0           0           0           0           0           0 
+
